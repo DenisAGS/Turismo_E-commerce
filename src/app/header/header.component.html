@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header class='App-header header-container'>
+        <div class='icon-container'>
+          <img class='icon' src="../../assets/Logo.jpeg" alt='Icono'>
+          <a class="icon-text" href='/'>Traveleros</a>
+        </div>
+    
+        <nav class='nav-menu' [ngClass]="{'open': menuOpen}">
+          <ul>
+            <li class='lo'><a routerLink='/'>Inicio</a></li>
+            <li class='lo'><a routerLink='/about'>Acerca</a></li>
+            <li class='lo'><a routerLink='/contacto'>Contacto</a></li>
+          </ul>
+        </nav>
+    
+        <div class='menu-icon' [ngClass]="{'open': menuOpen}" (click)='toggleMenu()'>
+          <div class='menu-line'></div>
+          <div class='menu-line'></div>
+          <div class='menu-line'></div>
+        </div>
+      </header>
+</body>
+  
+</html>

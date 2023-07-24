@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <app-header></app-header>
+    <div style="margin-top: 74px;">
+        <div class='first-content'>
+            <h2 class='leyenda'>LAS MEJORES EXPERIENCIAS EMPIEZAN CON UN BUEN CAFE</h2>
+            <app-header></app-header>
+            <a class='sub-leyenda'>Travesías mágicas para almas viajeras</a>
+        </div>
+
+        <div class='style-sub-texto'>
+            <div class='style-fecha-texto'>
+                <h2>EL CORAZON DEL CAFE, TESORO NATURAL</h2>
+                <h4>SABADO 20 DE MAYO 2022</h4>
+                <span>Pase de un dia saliendo desde CDMX con <strong>Tour sin Limites</strong></span>
+                <p>Viaje en transporte ejecutivo + Acceso a Los Manantiales Balneario Natural</p>
+            </div>
+            <div class='style-precio-texto'>
+                <span> Costo por Adulto <strong>$850</strong></span>
+                <span> NIÑO MENOR DE 10 AÑOS <strong>$750</strong></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class='image-container'>
+                <img *ngFor='let image of images; let index = index' [src]='image' [alt]='"Imagen " + (index + 1)'
+                    [style.opacity]='index === currentImageIndex ? 1 : 0' />
+            </div>
+            <div class="text-container">
+                <div>
+                    <h2>DETALLES DEL TOUR</h2>
+                    <h4> VISITA A LOS MANANTIALES BALNEARIO NATURAL</h4>
+                    <ul>
+                        <li>
+                            Acceso a Los Manantiales Balneario Natural
+                        </li>
+                        <li>
+                            Visita al nacimiento de agua hipotermal
+                        </li>
+                        <li>
+                            Nado en las albercas y chapoteaderos
+                        </li>
+                        <li>
+                            Visita a las Cascadas Naturales
+                        </li>
+                        <li>
+                            Avistamiento de aves y fauna natural
+                        </li>
+                    </ul>
+                    <h4>SALIDA 6:00AM / REGRESO 10:00PM</h4>
+                    <ul>
+                        <li>
+                            Metro Mixcoac
+                        </li>
+                        <li>
+                            Metro Chabacano
+                        </li>
+                    </ul>
+                    <h4>GARANTIA TOUR SIN LIMITES</h4>
+                    <ul>
+                        <li>
+                            Transporte turistico
+                        </li>
+                        <li>
+                            Chofer con licencia federal
+                        </li>
+                        <li>
+                            Seguro de viajero a bordo de la unidad
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class='info-turismo'>
+            <div class='general'>
+                <h4>INFORMACION GENERAL</h4>
+                <h5>ALTAS MONTAÑAS</h5>
+                <p>El municipio de Córdoba, Veracruz participa fuertemente en el Producto Bruto Nacional (PBI). Gran
+                    parte
+                    de esta participación, es aportada por las industrias automotriz, tecnológica y metal-mecánica
+                    localizadas en su mayoría en el departamento Capital.
+                    Asimismo, actividades económicas como el turismo, la producción agrícola y ganadera y sus industrias
+                    derivadas, como así también las artesanías, se constituyen en importantes pilares de la economía
+                    cordobesa.</p>
+            </div>
+            <div class='servicios'>
+                <h4>SERVICIOS</h4>
+                <h5>EMPRESA NUEVA EN FORMACION DENTRO DE LA ACTIVIDAD TURISTICA </h5>
+                <ul>
+                    <li>Guia capacitado
+                    </li>
+                    <li>Atencion médica
+                    </li>
+                    <li>Servicio de transporte
+                    </li>
+                    <li>Box lonch
+                    </li>
+                    <li>Taller de torito
+                    </li>
+                    <li>Atencion directa
+                    </li>
+                    <li>Áreas verdes
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='atencion'>
+            <h1>SACA EL MAXIMO PROVECHO DE NUESTROS TOURS</h1>
+            <div class="circles-container">
+                <div class="circle">
+                    <div class="circle-image">
+                        <img src="../../assets//senderismo.png" alt="Excursiones" />
+                    </div>
+                    <span>Excursiones locales</span>
+                    <p class='texto-circulo'>
+                        Con diferentes opciones de destinos a visitar dentro de la región de las altas montañas.
+                    </p>
+                </div>
+                <div class="circle">
+                    <div class="circle-image">
+                        <img src="../../assets//guia.png" alt="Guia" />
+                    </div>
+                    <span>Guías turístico profesional</span>
+                    <p class='texto-circulo'>
+                        Acompañamiento durante el recorrido con guías locales y profesionales capacitados.
+                    </p>
+                </div>
+                <div class="circle">
+                    <div class="circle-image">
+                        <img src="../../assets//asesorar.png" alt="Asesoramiento" />
+                    </div>
+                    <span>Asesoramiento profesional</span>
+                    <p class='texto-circulo'>
+                        Antes, durante y después de la contratación de cualquier servicio
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class='socios'>
+            <h1>SOCIOS COMERCIALES</h1>
+            <div>
+                <a>
+                    <img src="../../assets/ruta.jpeg" alt="Socio" class="socios-img" />
+                </a>
+            </div>
+        </div>
+        <footer class="footer-container">
+            <div class='footer-content-left'>
+                <a class='icon-img' href="https://www.facebook.com/tu-pagina" target="_blank" rel="noopener noreferrer">
+                </a>
+                <a class='icon-img' href="https://www.instagram.com/tu-pagina" target="_blank"
+                    rel="noopener noreferrer">
+                </a>
+                <div class="contact-info">
+                    <a>Contacto</a>
+                </div>
+            </div>
+            <div class="rights-reserved">© 2023 Todos los derechos reservados</div>
+        </footer>
+    </div>
+</body>
+
+</html>
